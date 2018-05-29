@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruby</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://demo.themeregion.com/biotic/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://demo.themeregion.com/biotic/css/animate.css" >
+        <link rel="stylesheet" href="https://demo.themeregion.com/biotic/css/fonts.css" >
+        <link rel="stylesheet" href="https://demo.themeregion.com/biotic/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://demo.themeregion.com/biotic/css/magnific-popup.css">
+        <link rel="stylesheet" href="https://demo.themeregion.com/biotic/css/slick.css">
+        <link rel="stylesheet" href="https://demo.themeregion.com/biotic/css/structure.css">
+        <link rel="stylesheet" href="https://demo.themeregion.com/biotic/css/main.css">
+        <link id="preset" rel="stylesheet" href="https://demo.themeregion.com/biotic/css/presets/preset1.css">
+        <link rel="stylesheet" href="https://demo.themeregion.com/biotic/css/responsive.css">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+
+        <div class="tr-menu">
+            <nav class="navbar navbar-toggleable-md">
+                <div class="container">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="hidden-md-up">
+                        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="../assets/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav hidden-md-down">
+                            <li class="nav-item tr-dropdown active">
+                                <a class="nav-link" href="../pages/index">Početna</a>
+                            </li>
+                            <li class="nav-item tr-dropdown">
+                                <a class="nav-link" href="../pages/login">Prijava</a>
+                            </li>
+                            <li class="tr-middle-logo"><a class="navbar-brand" href="../pages/index"><img class="img-fluid" src="../assets/logo.png" alt="Logo"></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/register">Registracija</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contact">Kontakt</a></li>
+                        </ul> 
+                        <ul class="navbar-nav hidden-md-up">
+                            <li class="nav-item tr-dropdown active">
+                                <a class="nav-link" href="../pages/index">Početna</a>
+                            </li>
+                            <li class="nav-item tr-dropdown">
+                                <a class="nav-link" href="../pages/login">Prijava</a>
+                            </li>
+                             <li class="nav-item"><a class="nav-link" href="../pages/register">Registracija</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contact">Kontakt</a></li>
+                        </ul> 
+                    </div><!-- /.navbar-collapse --> 
+                    
+                    <div class="find-option float-right">
+                        <ul class="global-list">
+                            <li class="cart-content tr-dropdown">
+                                <a href="#">Korpa<span class="cart-number">3</span></a>
+                                <div class="tr-dropdown-menu">
+                                    <ul class="global-list">
+                                        <li class="remove-item">
+              
+                                            <div class="product">
+                                                <a href="details.html">
+                                                    <span class="product-image">
+                                                        <img src="../assets/1.jpg" alt="Image" class="img-fluid">
+                                                    </span>
+                                                    <span class="product-title">Smoothie <strong>Paradajz</strong></span>
+                                                    <span class="price"><del>15 KM</del>$12 KM</span>
+                                                </a>
+                                            </div><!-- /.product -->                               
+                                        </li>
+                                        <li class="remove-item">
+                                            
+                                            <div class="product">
+                                                <a href="details.html">
+                                                    <span class="product-image">
+                                                        <img src="../assets/1.jpg" alt="Image" class="img-fluid">
+                                                    </span>
+                                                    <span class="product-title">Smoethie <strong>Paradajz</strong></span>
+                                                    <span class="price"><del>18 KM</del>13 KM</span>
+                                                </a>
+                                            </div><!-- /.product -->                               
+                                        </li>
+                                    </ul>
+                                    <div class="total-price">
+                                        <span><strong>Ukupna cijena: </strong>33 KM</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a class="btn btn-primary cart-button" href="../pages/store">Plačanje</a>
+                                    </div>                                                                
+                                </div><!-- /.tr-dropdown-menu -->                            
+                            </li>
+                        </ul>                        
+                    </div><!-- /.find-option -->
+
+                </div><!-- /.container -->
+            </nav>                                    
+        </div><!-- /.tr-menu -->
+    <%= yield %>
+    <div class="tr-footer section-bg-white">
+            <div class="footer-top section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="../pages/index"><img src="../assets/logo.png" alt="Logo" class="img-fluid"></a>
+                                </div>
+                                <p>Najbolja i najkvalitetnija ponuda smoothia u gradu!</p>
+                            </div><!-- /.footer-widget -->
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer-widget">
+                                <h3>Brzi linkovi</h3>
+                                <ul class="global-list">
+                                    <li><a href="../pages/index">Početna</a></li>
+                                    <li><a href="../pages/login">Prijava</a></li>
+                                    <li><a href="../pages/register">Registracija</a></li>
+                                    <li><a href="../pages/contact">Kontakt</a></li>
+                                    <li><a href="../pages/store">Korpa</a></li>
+                                </ul>
+                            </div><!-- /.footer-widget -->
+                        </div>
+                        <div class="col-md-5 col-lg-4">
+                            <div class="footer-widget">
+                                <h3>Pretplati se</h3>
+                                <p>Budite u toku sa našim novim ponudama</p>
+                                <form method="post" action="#">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" required="required" placeholder="Unesite vaš email">
+                                    </div>             
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-primary">
+                                    </div>
+                                </form>                            
+                            </div><!-- /.footer-widget -->
+                        </div>
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-top -->
+
+            <div class="footer-bottom clearfix">
+                <div class="container">
+                    <div class="float-right">
+                        <div class="float-right">
+                            <ul class="select-option global-list">
+                                <li>
+                                    <span>Jezik:</span>
+                                    <select>
+                                        <option value="#">EN</option>
+                                        <option value="#">BOS</option>
+                                    </select>                                
+                                </li>
+                                <li>
+                                    <span>Valuta:</span>
+                                    <select>
+                                        <option value="#">KM</option>
+                                        <option value="#">EUR</option>
+                                    </select>                                  
+                                </li>
+                            </ul>                             
+                        </div>                       
+                    </div>
+                    <div class="float-left">
+                        <span>Copyright &copy; 2018 <a href="#">My Juice</a> - Sva prava zadržana.</span>
+                    </div>
+                </div><!-- /.container -->
+            </div><!-- /.footer-bottom -->
+        </div><!-- /.tr-footer --> 
+     <script src="https://demo.themeregion.com/biotic/js/jquery.min.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/tether.min.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/bootstrap.min.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/slick.min.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/countdown.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/magnific-popup.min.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/jquery-ui-min.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/jquery.spinner.min.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/carousel-touch.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/switcher.js"></script>
+        <script src="https://demo.themeregion.com/biotic/js/main.js"></script>
+
+  </body>
+</html>
